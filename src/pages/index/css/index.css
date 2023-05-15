@@ -2,7 +2,82 @@
 
 :root {
     --pink: #ff2e6c;
-    --cyan: #28dbdb;
+    --cyan:     ;
     --dark-blue: #15036e;
     --blue: #15036e;
+
+    --font: "Londrina Solid", cursive
+}
+
+header {
+    width: 100%
+}
+
+.header--nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header--nav-img {
+    width: 65px;
+}
+
+.header--nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 20px;
+}
+
+.header--nav-item > a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header--nav-item > a > img {
+    height: 25px;
+    width: auto;
+}
+
+.header--nav-item > a > span {
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--dark-blue);
+}
+
+@media screen and (min-width: 800px){
+
+    .header--nav-img {
+        width: 110px;
+    }
+
+    .header--nav {
+        padding: 30px 40px;
+    }
+
+    .header--nav, .header--nav-list {
+        flex-direction: row;
+    }
+
+    .header--nav-list {
+        padding-top: 0;
+        padding-left: 150px;
+        gap: 150px;
+    }
+
+    .header--nav-item > a > img {
+        height: 40px;
+        width: auto;
+    }
+
+    .header--nav-item > a > span {
+        padding-top: 5px;
+        font-size: 25px
+    }
 }
