@@ -9,6 +9,10 @@
     --font: "Londrina Solid", cursive
 }
 
+* {
+    transition-duration: 200ms;
+}
+
 header {
     width: 100%
 }
@@ -36,12 +40,12 @@ header {
 .header--nav-item > a {
     display: flex;
     flex-direction: column;
+    text-align: center;
     align-items: center;
 }
 
 .header--nav-item > a > img {
-    height: 25px;
-    width: auto;
+    width: 30px;
 }
 
 .header--nav-item > a > span {
@@ -105,7 +109,73 @@ header {
     text-transform: uppercase;
 }
 
+#robot-history {
+    width: 100%;
+}
+
+.robot-history--wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    text-transform: uppercase;
+    font-family: var(--font);
+}
+
+.title--container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.title--container > h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 85%;
+    border: var(--cyan) 3px dotted;
+    border-bottom: none;
+    font-family: var(--font);
+    color: var(--dark-blue);
+    text-transform: uppercase;
+}
+
+.robot-history--wrapper > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.robot-history--wrapper > article > img {
+    width: 50px;
+}
+
+.robot-history--wrapper > article h3 {
+    font-size: 15px;
+    color: var(--pink);
+}
+
+.robot-history--wrapper > article > strong {
+    padding-top: 10px;
+    font-size: 25px;
+    color: var(--cyan);
+}
+
+.robot-history--wrapper > article > p {
+    font-weight: 100;
+    color: var(--blue);
+    padding-top: 20px;
+}
+
 @media screen and (min-width: 800px){
+
+    * {
+        transition-duration: 200ms;
+    }
 
     .header--nav-img {
         width: 110px;
@@ -126,8 +196,7 @@ header {
     }
 
     .header--nav-item > a > img {
-        height: 40px;
-        width: auto;
+        width: 45px;
     }
 
     .header--nav-item > a > span {
@@ -155,5 +224,22 @@ header {
     .more-info--container > span {
         font-size: 25px;
         left: 100px;
+    }
+
+    .robot-history--wrapper {
+        flex-direction: row;
+        gap: 10px;
+        padding: 110px;
+    }
+
+    .robot-history--wrapper > article {
+        padding-top: 0;
+        width: 33.3%;
+        height: 500px;
+        justify-content: start;
+    }
+
+    .robot-history--wrapper > article > p {
+        line-height: 25px;
     }
 }
