@@ -13,6 +13,10 @@
     transition-duration: 200ms;
 }
 
+body {
+    background-color: #fbfbfb;
+}
+
 header {
     width: 100%
 }
@@ -169,6 +173,22 @@ header {
     font-weight: 100;
     color: var(--blue);
     padding-top: 20px;
+}
+
+.three-law--wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    text-transform: uppercase;
+    font-family: var(--font);
+}
+
+.three-law--wrapper > p {
+    font-weight: 100;
+    color: var(--blue);
+    text-align: center;
+    line-height: 25px;
 }
 
 @media screen and (min-width: 800px){
