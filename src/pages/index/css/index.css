@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;400&display=swap');
+
+:root {
+    --pink: #ff2e6c;
+    --cyan: #28dbdb;
+    --dark-blue: #15036e;
+    --blue: #15036e;
+
+    --font: "Londrina Solid", cursive
+}
+
+* {
+    transition-duration: 200ms;
+}
+
+body {
+    background-color: #fbfbfb;
+}
+
+header {
+    width: 100%
+}
+
+.header--nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.header--nav-img {
+    width: 65px;
+}
+
+.header--nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding-top: 20px;
+}
+
+.header--nav-item > a {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.header--nav-item > a > img {
+    width: 30px;
+}
+
+.header--nav-item > a > span {
+    text-transform: uppercase;
+    font-family: var(--font);
+    font-weight: 400;
+    color: var(--dark-blue);
+}
+
+.top--main-container {
+    display: flex;
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("/assets/img/background.gif") no-repeat;
+}
+
+.top--main-container > h1, .top--main-container > p {
+    text-transform: uppercase;
+    color: white;
+    font-family: var(--font);
+    font-weight: 400;
+}
+
+.top--main-container > p {
+    padding: 40px;
+    text-align: center;
+    line-height: 30px;
+}
+
+.more-info--container {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    background-color: var(--pink);
+}
+
+.more-info--container > span {
+    position: absolute;
+    font-family: Roboto;
+    text-transform: uppercase;
+    color: gray;
+    left: 70px;
+}
+
+.more-info--container > a {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 60px;
+    right: 0px;
+    
+    background-color: var(--cyan);
+    font-family: Roboto;
+    text-transform: uppercase;
+}
+
+#robot-history {
+    width: 100%;
+}
+
+.robot-history--wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    text-transform: uppercase;
+    font-family: var(--font);
+}
+
+.title--container {
+    display: flex;
+    justify-content: center;
+    padding-top: 50px;
+    width: 100%;
+}
+
+.title--container > h2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+    width: 85%;
+    border: var(--cyan) 3px dotted;
+    border-bottom: none;
+    font-family: var(--font);
+    color: var(--dark-blue);
+    text-transform: uppercase;
+}
+
+.robot-history--wrapper > article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.robot-history--wrapper > article > img {
+    width: 50px;
+}
+
+.robot-history--wrapper > article h3 {
+    font-size: 15px;
+    color: var(--pink);
+}
+
+.robot-history--wrapper > article > strong {
+    padding-top: 10px;
+    font-size: 25px;
+    color: var(--cyan);
+}
+
+.robot-history--wrapper > article > p {
+    font-weight: 100;
+    color: var(--blue);
+    padding-top: 20px;
+}
+
+.three-law--wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 50px;
+    text-transform: uppercase;
+    font-family: var(--font);
+}
+
+.three-law--wrapper > p {
+    font-weight: 100;
+    color: var(--blue);
+    text-align: center;
+    line-height: 25px;
+}
+
+@media screen and (min-width: 800px){
+
+    * {
+        transition-duration: 200ms;
+    }
+
+    .header--nav-img {
+        width: 110px;
+    }
+
+    .header--nav {
+        padding: 30px 40px;
+    }
+
+    .header--nav, .header--nav-list {
+        flex-direction: row;
+    }
+
+    .header--nav-list {
+        padding-top: 0;
+        padding-left: 150px;
+        gap: 150px;
+    }
+
+    .header--nav-item > a > img {
+        width: 45px;
+    }
+
+    .header--nav-item > a > span {
+        padding-top: 5px;
+        font-size: 25px
+    }
+
+    .top--main-container {
+        background-size: cover;
+        height: 650px;
+    }
+
+    .top--main-container > h1 {
+        font-size: 50px;
+    }
+
+    .top--main-container > p {
+        font-size: 30px;
+    }
+
+    .more-info--container {
+        height: 70px;
+    }
+
+    .more-info--container > span {
+        font-size: 25px;
+        left: 100px;
+    }
+
+    .robot-history--wrapper {
+        flex-direction: row;
+        gap: 10px;
+        padding: 110px;
+    }
+
+    .robot-history--wrapper > article {
+        padding-top: 0;
+        width: 33.3%;
+        height: 500px;
+        justify-content: start;
+    }
+
+    .robot-history--wrapper > article > p {
+        line-height: 25px;
+    }
+}
